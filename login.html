@@ -1,0 +1,30 @@
+<div id="wrap" class="login">
+  <div id="login">
+    <div class="logo">
+      <h1 class="blind">NIFCO Mobile ERP</h1>
+    </div>
+    <hr />
+    <div class="l_form">
+      <fieldset>
+        <legend>로그인폼</legend>
+        <div class="lf_wrap">
+          <label for="lf_id" class="blind">User ID</label>
+          <input type="text" id="lf_id" [(ngModel)]="id" class="input t1" placeholder="User ID" required />
+        </div>
+        <div class="lf_wrap">
+          <label for="lf_password" class="blind">Password</label>
+          <input type="password" id="lf_password" [(ngModel)]="pw" class="input t1" placeholder="Password" required />
+        </div>
+        <div class="lf_wrap checkbox">
+          <input type="checkbox" id="lf_idsave" name="lf_idsave" />
+          <label for="lf_idsave"><i></i><span>ㅋㅋㅋㅋ</span></label>
+        </div>
+        <div class="lf_wrap">
+          <button type="submit" class="btn big full t1" (click)="doLogin()">로그인</button>
+        </div>
+      </fieldset>
+    </div>
+    <hr />
+    <div class="copyright"><span class="blind">ⓒ NIFCO KOREA INC.</span></div>
+  </div>
+</div>
